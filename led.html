@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="layouts">
+        <section class="navbar">
+            <H3>NERD LABS</H3>
+        </section>
+        <section class="page-title">
+            <h3>LED CONTROL</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="mainroomLedImage">
+                <p class="led-location-text">MAIN ROOM</p>
+                <button class="led-submit" id="ledMainroom" onclick="setMainRoomLed()">turn on</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="bedroomLedImage">
+                <p class="led-location-text">BED ROOM</p>
+                <button class="led-submit" id="ledBedroom" onclick="setBedRoomLed()">turn on</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="desksetupLedImage">
+                <p class="led-location-text">DESK SET UP</p>
+                <button class="led-submit" id="ledDesksetup" onclick="setDeskSetupLed()">turn on</button>
+            </div>
+            <div class="led">
+                <img src="assets/led-off.png" class="led-image" id="cornerplaceLedImage">
+                <p class="led-location-text">CORNER PLACE</p>
+                <button class="led-submit" id="ledCornerplace" onclick="setCornerPlaceLed()">turn on</button>
+            </div>
+        </section>
+        <section class="bottombar">
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-fan"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
