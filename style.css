@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 *, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: url('assets/cursor.png'), auto;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .layouts {
@@ -16,7 +16,7 @@
     position: relative;
 }
 .navbar {
-    background-color: #579fff;
+    background-color: #0051BA;
     padding: 16px;
     text-align: center;
     color: white;
@@ -50,7 +50,7 @@
 }
 
 .item-submit, .led-submit {
-    background-color: #579fff;
+    background-color: #0051BA;
     padding: 4px 8px;
     width: 100%;
     color: white;
@@ -58,6 +58,16 @@
     font-size: 18px;
     border: none;
     border-radius: 25px;
+}
+
+.item-submit:hover {
+    scale: 102%;
+    transition: all .3s ease-in-out;
+}
+
+.led-submit:hover {
+    scale: 105%;
+    transition: all .3s ease-in-out;
 }
 
 .page-title {
@@ -100,7 +110,7 @@
 .bottombar {
     position: absolute;
     bottom: 0;
-    background-color: #579fff;
+    background-color: #0051BA;
     width: 100%;
     left: 0;
 }
